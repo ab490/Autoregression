@@ -14,11 +14,11 @@ e. Used python inbuilt function ‘plot_acf’ to generate the line plot which I
 
 3. A general autoregression model estimates the unknown data values as a linear combination of given lagged data values. Did the following:\
 
-a. Split the data into two parts for training and testing. Chose the first 250 days as training data and last remaining days as test data. Generated an autoregression (AR) model using AutoReg(). Used 5 lagged values as its input (p=5). Train/Fit the model onto the training dataset. Used the trained AR model to predict the values for the test dataset. Computed RMSE computed for test data and compared it with RMSE obtained in part 2. Generated a plot between the original test data time sequence and predicted test data time sequence. \
+   a. Split the data into two parts for training and testing. Chose the first 250 days as training data and last remaining days as test data. Generated an autoregression (AR)    model using AutoReg(). Used 5 lagged values as its input (p=5). Train/Fit the model onto the training dataset. Used the trained AR model to predict the values for the test    dataset. Computed RMSE computed for test data and compared it with RMSE obtained in part 2. Generated a plot between the original test data time sequence and predicted        test data time sequence. \
 
-b. Generated five AR models using AutoReg() function with lagged values as last 1, 5, 10, 15 and 25 days. Computed the RMSE between predicted and original data values and infered the changes in RMSE with changes in lagged values. \
+   b. Generated five AR models using AutoReg() function with lagged values as last 1, 5, 10, 15 and 25 days. Computed the RMSE between predicted and original data values and    infered the changes in RMSE with changes in lagged values. \
 
-c. Computed the heuristic value for optimal number of lags up to the condition on autocorrelation such that abs(AutoCorrelation) > 2/sqrt(T), where T is the number of 
-observations in training data. Used it as input in AutoReg()function to predict the power consumed in test days and compute the RMSE value. \
+   c. Computed the heuristic value for optimal number of lags up to the condition on autocorrelation such that abs(AutoCorrelation) > 2/sqrt(T), where T is the number of 
+   observations in training data. Used it as input in AutoReg()function to predict the power consumed in test days and compute the RMSE value. \
 
-d. Compared the optimal number of lags (p) in parts 3.b and 3.c. Compared the RMSE values in parts 3.b and 3.c.
+   d. Compared the optimal number of lags (p) in parts 3.b and 3.c. Compared the RMSE values in parts 3.b and 3.c.
